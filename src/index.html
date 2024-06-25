@@ -39,64 +39,69 @@
     <!-- Hero Section Start -->
     <section
       id="hero"
-      class="h-[112vh] bg-repeat-x bg-bottom mt-7"
-      style="background-image: url(img/gradasi\ tok.png)"
+      class="bg-no-repeat bg-cover bg-bottom min-h-[110vh] px-12 pt-7 max-sm:px-4 max-sm:pt-4"
+      style="background-image: url(img/gradasi.png)"
     >
       <div class="container mx-auto">
         <!-- Navbar Start -->
-        <div class="flex justify-between mx-12 max-lg:justify-center">
-          <h1 class="text-2xl">Naraya Albani</h1>
+        <div class="flex justify-between max-lg:flex max-lg:justify-center">
+          <h1 class="text-2xl max-lg:text-xl">Naraya Albani</h1>
           <nav class="flex text-lg gap-10 items-center max-lg:hidden">
             <a href="#skill">Skill</a>
-            <a href="">Portfolio</a>
-            <a href="">Certificate</a>
-            <a href="">Contact</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#certificate">Certificate</a>
+            <a href="#contact">Contact</a>
           </nav>
         </div>
         <!-- Navbar End -->
 
         <!-- Hero Text Start -->
         <div
-          class="flex flex-col justify-center items-center gap-4 text-center"
+          class="flex flex-col justify-center items-center gap-4 text-center h-[80vh]"
         >
-          <div class="text-4xl">
+          <div class="text-4xl max-lg:text-2xl">
             <h1>Hey!👋👋</h1>
             <h1>
               I'm Naraya Albani, a
               <span class="text-yellow underline">Programmer</span>
             </h1>
           </div>
-          <p class="text-xl">
+          <p class="text-xl max-lg:text-base">
             I develop and design experience that make user’s life easier
           </p>
           <div class="flex gap-10 justify-center">
             <a href="https://www.x.com/narayaalbani" target="_blank"
               ><img
-                src="img/logo x.svg"
+                src="img/icon/logo x.svg"
                 alt="Naraya Albani's X Account"
-                class="size-10"
+                class="size-10 max-lg:size-8"
             /></a>
             <a href="https://www.github.com/narayaalbani" target="_blank"
               ><img
-                src="img/logo github.svg"
+                src="img/icon/logo github.svg"
                 alt="Naraya Albani's GitHub Account"
-                class="size-10"
+                class="size-10 max-lg:size-8"
             /></a>
             <a href="https://www.linkedin.com/in/narayaalbani/" target="_blank"
               ><img
-                src="img/logo linkedin.svg"
+                src="img/icon/logo linkedin.svg"
                 alt="Naraya Albani's LinkedIn Account"
-                class="size-10"
+                class="size-10 max-lg:size-8"
             /></a>
             <a href="https://www.instagram.com/narayaalbani" target="_blank">
               <img
-                src="img/logo ig.svg"
+                src="img/icon/logo ig.svg"
                 alt="Naraya Albani's Instagram Account"
-                class="size-10"
+                class="size-10 max-lg:size-8"
               />
             </a>
           </div>
-          <img src="img/panah bawah.svg" class="size-10" />
+          <a href="#skill"
+            ><img
+              src="img/icon/panah bawah.svg"
+              alt=""
+              class="size-10 mt-10 max-lg:size-8"
+          /></a>
         </div>
         <!-- Hero Text End -->
       </div>
@@ -104,51 +109,108 @@
     <!-- Hero Section End -->
 
     <!-- Skill Section Start -->
-    <section id="skill" class="bg-dark h-screen">
-      <h1 class="text-3xl text-light text-center pt-10">Skill</h1>
-      <div class="flex flex-row mt-8 justify-center">
+    <section
+      id="skill"
+      class="bg-dark py-10 flex flex-col gap-8 justify-center px-12 max-sm:px-4 max-sm:gap-4"
+    >
+      <h1 class="text-3xl text-light text-center max-lg:text-2xl">Skill</h1>
+      <div
+        class="flex flex-row justify-center gap-5 max-lg:flex max-lg:flex-col"
+      >
         <!-- Web Programming Start-->
         <div class="flex flex-col items-center">
-          <h5 class="text-xl bg-light px-6 py-2 w-fit border-dark">
+          <h5
+            class="text-xl bg-light px-6 py-2 border-dark border-4 text-center max-sm:text-lg"
+          >
             Web Programming
           </h5>
-          <div class="flex bg-light px-12 py-8">
-            <img src="img/web/HTML.png" alt="HTML5" class="size-full" />
-            <img src="img/web/CSS.png" alt="CSS3" class="size-full" />
-            <img src="img/web/JS.png" alt="JavaScript" class="size-full" />
-            <img src="img/web/Tailwind.png" alt="Tailwind" class="size-full" />
+          <div
+            class="flex bg-light px-6 py-2 items-center gap-4 lg:px-8 lg:py-4 lg:gap-6"
+          >
+            <img
+              src="img/web/HTML.png"
+              alt="HTML5"
+              class="max-h-[60px] max-sm:max-h-[50px]"
+            />
+            <img
+              src="img/web/CSS.png"
+              alt="CSS3"
+              class="max-h-[60px] max-sm:max-h-[50px]"
+            />
+            <img
+              src="img/web/JS.png"
+              alt="JavaScript"
+              class="max-h-[60px] max-sm:max-h-[50px]"
+            />
+            <img
+              src="img/web/Tailwind.png"
+              alt="Tailwind"
+              class="max-h-[40px] max-sm:max-h-[30px]"
+            />
           </div>
         </div>
         <!-- Web Programming End -->
 
         <!-- Language Start -->
         <div class="flex flex-col items-center">
-          <h5 class="text-xl bg-light px-6 py-2 w-fit border-dark">Language</h5>
-          <div class="flex bg-light px-12 py-8">
-            <img src="img/lang/Java.png" alt="Java" class="size-full" />
-            <img src="img/lang/Kotlin.png" alt="Kotlin" class="size-full" />
+          <h5
+            class="text-xl bg-light px-6 py-2 border-dark border-4 text-center max-sm:text-lg"
+          >
+            Language
+          </h5>
+          <div
+            class="flex bg-light px-6 py-2 items-center gap-4 lg:px-8 lg:py-4 lg:gap-6"
+          >
+            <img
+              src="img/lang/Java.png"
+              alt="Java"
+              class="max-h-[60px] max-sm:max-h-[50px]"
+            />
+            <img
+              src="img/lang/Kotlin.png"
+              alt="Kotlin"
+              class="max-h-[60px] max-sm:max-h-[50px]"
+            />
           </div>
         </div>
         <!-- Language End -->
 
         <!-- Database Start -->
         <div class="flex flex-col items-center">
-          <h5 class="text-xl bg-light px-6 py-2 w-fit border-dark">Database</h5>
-          <div class="flex bg-light px-12 py-8">
-            <img src="img/database/MySQL.png" alt="MySQL" class="size-full" />
+          <h5
+            class="text-xl bg-light px-6 py-2 border-dark border-4 text-center max-sm:text-lg"
+          >
+            Database
+          </h5>
+          <div class="flex bg-light px-6 py-2 items-center lg:px-8 lg:py-4">
+            <img
+              src="img/database/MySQL.png"
+              alt="MySQL"
+              class="max-h-[60px] max-sm:max-h-[50px]"
+            />
           </div>
         </div>
         <!-- Database End -->
 
         <!-- Design Start -->
         <div class="flex flex-col items-center">
-          <h5 class="text-xl bg-light px-6 py-2 w-fit border-dark">Design</h5>
-          <div class="flex bg-light px-12 py-8">
-            <img src="img/design/Figma.png" alt="Figma" class="size-full" />
+          <h5
+            class="text-xl bg-light px-6 py-2 border-dark border-4 text-center max-sm:text-lg"
+          >
+            Design
+          </h5>
+          <div
+            class="flex bg-light px-6 py-2 items-center gap-4 lg:px-8 lg:py-4 lg:gap-6"
+          >
+            <img
+              src="img/design/Figma.png"
+              alt="Figma"
+              class="max-h-[60px] max-lg:max-h-[50px]"
+            />
             <img
               src="img/design/Aseprite.png"
               alt="Aseprite"
-              class="size-full"
+              class="max-h-[60px] max-lg:max-h-[50px]"
             />
           </div>
         </div>
@@ -156,5 +218,32 @@
       </div>
     </section>
     <!-- Skill Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section
+      id="portfolio"
+      class="bg-green px-12 py-10 flex flex-col gap-8 justify-center max-sm:px-4 max-sm:gap-4"
+    >
+      <h1 class="text-3xl text-center">Portfolio</h1>
+      <div class="flex flex-row justify-center gap-8 min-h-[295px]">
+        <div
+          class="bg-light border-dark border-4 flex flex-col px-2 py-2 gap-2"
+        >
+          <img src="img/portfolio.png" alt="" class="aspect-video" />
+          <div class="flex flex-row justify-between items-center">
+            <p class="text-base bg-red border-4 border-dark px-4 py-2">
+              Mobile App
+            </p>
+            <p class="text-lg">12 Dec 2024</p>
+          </div>
+          <h1 class="text-2xl">Aplikasi Playlist Lagu</h1>
+          <p class="text-base">
+            Aplikasi mobile untuk menampilkan playlist yang berisi lagu-lagu.
+          </p>
+          <img src="img/lang/Kotlin.png" alt="" class="size-16" />
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
   </body>
 </html>
