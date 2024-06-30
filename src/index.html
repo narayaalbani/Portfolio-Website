@@ -222,41 +222,108 @@
     <!-- Skill Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="py-10 bg-green min-h-screen">
-      <h1 class="font-semibold text-3xl text-center mb-8 max-sm:mb-4">
+    <section id="portfolio" class="py-10 bg-green">
+      <h1
+        class="font-semibold text-3xl text-center mb-8 max-lg:text-2xl max-sm:mb-4"
+      >
         Portfolio
       </h1>
-      <div class="flex flex-row gap-8 overflow-x-auto">
+      <div class="flex flex-nowrap gap-4 px-8 overflow-x-auto mx-auto">
         <div
-          class="bg-light border-dark border-4 flex flex-col px-2 py-2 gap-2"
+          class="bg-light border-dark border-4 flex flex-col p-2 gap-2 max-w-96 min-w-60 last:items-end"
         >
-          <img src="img/portfolio.png" alt="" class="w-[401px] h-[224px]" />
-          <h1 class="text-lg font-semibold">Aplikasi Playlist Lagu</h1>
-          <p class="text-base">
+          <img src="img/portfolio.png" alt="" class="aspect-video" />
+          <h1 class="text-lg font-semibold lg:text-xl">
+            Aplikasi Playlist Lagu
+          </h1>
+          <p class="text-base lg:text-lg">
             Aplikasi mobile untuk menampilkan playlist yang berisi lagu-lagu.
           </p>
-          <div class="flex gap-6 items-center text-sm">
+          <div class="flex gap-6 items-center text-sm text-grey lg:text-base">
             <p>2 days ago</p>
             <p>Mobile App</p>
-            <img src="img/lang/Kotlin.png" alt="" class="size-3" />
+            <img src="img/lang/Kotlin.png" alt="" class="h-[1.2em]" />
           </div>
         </div>
+
         <div
-          class="bg-light border-dark border-4 flex flex-col px-2 py-2 gap-2"
+          class="bg-light border-dark border-4 flex flex-col p-2 gap-2 max-w-96 min-w-60"
         >
-          <img src="img/portfolio.png" alt="" class="w-[401px] h-[224px]" />
-          <h1 class="text-lg font-semibold">Aplikasi Playlist Lagu</h1>
-          <p class="text-base">
+          <img src="img/portfolio.png" alt="" class="aspect-video" />
+          <h1 class="text-lg font-semibold lg:text-xl">
+            Aplikasi Playlist Lagu
+          </h1>
+          <p class="text-base lg:text-lg">
             Aplikasi mobile untuk menampilkan playlist yang berisi lagu-lagu.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <div class="flex gap-6 items-center text-sm">
+          <div class="flex gap-6 items-center text-sm text-grey lg:text-base">
             <p>2 days ago</p>
             <p>Mobile App</p>
-            <img src="img/lang/Kotlin.png" alt="" class="size-3" />
+            <img src="img/lang/Kotlin.png" alt="" class="h-[1.2em]" />
           </div>
         </div>
       </div>
     </section>
     <!-- Portfolio Section End -->
+
+    <!-- Certificate Section Start -->
+    <section id="certificate" class="bg-yellow py-10">
+      <h1
+        class="font-semibold text-3xl text-center mb-8 max-lg:text-2xl max-sm:mb-4"
+      >
+        Certificate
+      </h1>
+      <div class="grid grid-cols-1 self-center md:grid-cols-2 gap-4">
+        <div
+          class="bg-light border-dark border-4 p-2 flex flex-col gap-2 max-w-60"
+        >
+          <img src="img/certificate.png" alt="" class="aspect-video" />
+          <p class="text-sm text-grey">Dec 2023–Dec 2026 (3 years)</p>
+          <h1 class="font-semibold text-lg">
+            Belajar Membuat Aplikasi Android untuk Pemula
+          </h1>
+        </div>
+        <div
+          class="bg-light border-dark border-4 p-2 flex flex-col gap-2 max-w-60"
+        >
+          <img src="img/certificate.png" alt="" class="aspect-video" />
+          <p class="text-sm text-grey">Dec 2023–Dec 2026 (3 years)</p>
+          <h1 class="font-semibold text-lg">
+            Belajar Membuat Aplikasi Android untuk Pemula
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- Certificate Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="py-10 bg-blue">
+      <h1
+        class="font-semibold text-3xl text-light text-center mb-8 max-lg:text-2xl max-sm:mb-4"
+      >
+        Contact
+      </h1>
+      <div class="bg-light border-dark border-4 mx-auto w-[80vw]">
+        <form action="" class="flex flex-col p-4 gap-4">
+          <input type="text" placeholder="Name" class="p-2 text-lg" />
+          <input type="text" placeholder="Email" class="p-2 text-lg" />
+          <input type="text" placeholder="Message" class="p-2 text-lg" />
+          <button
+            type="submit"
+            class="bg-green text-dark border-dark border-4 text-lg py-2 w-1/5 self-center"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Credit Start -->
+    <p class="bg-blue text-light text-sm text-center py-4">
+      Copyright &copy; 2024 Naraya Albani
+    </p>
+    <!-- Credit End -->
   </body>
 </html>
