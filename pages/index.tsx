@@ -4,6 +4,9 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import NotionServices from "@/services/notion-services";
 import { PortfolioPost } from "@/@types/schema";
 import Portfolio from "@/components/Portfolio";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
 
 // export default function Home() {
 //   return (
@@ -36,9 +39,18 @@ const Home: NextPage = ({
         <title>Naraya Albani</title>
       </Head>
       <Navbar />
-      {portfolio.map((item: PortfolioPost) => (
-        <Portfolio key={item.id} portfolio={item} />
-      ))}
+      <Swiper
+        modules={[Pagination]}
+        spaceBetween={20}
+        slidesPerView={2}
+        pagination={{ clickable: true }}
+      >
+        {portfolio.map((item: PortfolioPost) => (
+          <SwiperSlide key={item.id}>
+            <Portfolio portfolio={item} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </>
   );
 };

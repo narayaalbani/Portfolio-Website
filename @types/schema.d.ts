@@ -10,5 +10,5 @@ export type PortfolioPost = {
   title: string;
   date: string;
   description: string;
-  // tags: Tag[];
+  tags: Tag[];
 };
