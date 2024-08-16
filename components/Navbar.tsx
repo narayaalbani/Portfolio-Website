@@ -8,9 +8,9 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between pt-6 px-12">
       <h1 className="text-2xl">Naraya Albani</h1>
-      <div className="flex text-lg gap-10 items-center text-center max-xl:hidden">
+      <div className="flex text-lg gap-10 items-center text-center">
         {NavItem.map((item) => (
           <a
             key={item.name}
