@@ -8,6 +8,7 @@ import "swiper/css";
 import CardPortfolio from "@/components/CardPortfolio";
 import Hero from "@/components/Hero";
 import Overview from "@/components/Overview";
+import ButtomNav from "@/components/ButtomNav";
 
 export const getStaticProps: GetStaticProps = async () => {
   const portfolio = await new NotionServices().getPublishedPortfolio();
@@ -26,6 +27,7 @@ const Home: NextPage = ({
       <Head>
         <title>Naraya Albani</title>
       </Head>
+      <ButtomNav />
       <Hero />
       <Overview />
       <Swiper
