@@ -27,7 +27,7 @@ export default function Hero() {
           <h1>Hey!👋👋</h1>
           <h1>
             I'm Naraya Albani, a{" "}
-            <span className="inline-block align-middle">
+            <span className="md:inline-block">
               <Typewriter
                 options={{
                   strings: [
@@ -36,7 +36,6 @@ export default function Hero() {
                   ],
                   autoStart: true,
                   loop: true,
-                  wrapperClassName: "inline",
                 }}
               />
             </span>
