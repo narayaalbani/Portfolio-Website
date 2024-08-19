@@ -20,9 +20,8 @@ export default function Hero() {
   ];
 
   return (
-    <section className="bg-no-repeat bg-cover bg-bottom min-h-[110vh] bg-[url('/gradation.png')]">
-      <Navbar />
-      <div className="px-4 mx-auto max-w-screen-xl text-center h-[80vh] flex flex-col justify-center">
+    <section className="bg-no-repeat bg-cover bg-bottom min-h-[100vh] bg-[url('/gradation.png')]">
+      <div className="px-6 mx-auto max-w-screen-xl text-center h-[80vh] flex flex-col justify-center">
         <div className="mb-4 text-2xl font-semibold tracking-tight leading-none md:text-3xl lg:text-4xl">
           <h1>Hey!👋👋</h1>
           <h1>
