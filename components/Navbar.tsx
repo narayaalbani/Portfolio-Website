@@ -45,10 +45,6 @@ export default function Navbar() {
 
       if (currentScrollY > lastScrollY) {
         setScrollDirection("down");
-        if (menuOpen && isOpen) {
-          setMenuOpen(false);
-          onClose();
-        }
       } else {
         setScrollDirection("up");
       }

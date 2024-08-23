@@ -1,6 +1,7 @@
 import { PortfolioPost } from "@/@types/schema";
 import { FunctionComponent } from "react";
 import dayjs from "dayjs";
+import Image from "next/image";
 
 type PortfolioPostProps = {
   portfolio: PortfolioPost;
@@ -14,10 +15,12 @@ const CardPortfolio: FunctionComponent<PortfolioPostProps> = ({
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img
+        <Image
           className="rounded-t-lg w-full h-48 object-cover"
           src={portfolio.cover}
           alt=""
+          width={384}
+          height={192}
         />
       </a>
       <div className="p-5">
