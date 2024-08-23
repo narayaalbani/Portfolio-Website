@@ -30,10 +30,7 @@ const Home: NextPage = ({
       <Navbar />
       <Hero />
       <Overview />
-      {portfolio.map((item: PortfolioPost) => (
-        <CardPortfolio key={item.id} portfolio={item} />
-      ))}
-      {/* <Swiper
+      <Swiper
         modules={[Pagination]}
         spaceBetween={30}
         slidesPerView={3}
@@ -47,7 +44,7 @@ const Home: NextPage = ({
             <CardPortfolio portfolio={item} />
           </SwiperSlide>
         ))}
-      </Swiper> */}
+      </Swiper>
     </>
   );
 };
