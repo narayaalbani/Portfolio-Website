@@ -1,4 +1,4 @@
-import { PortfolioPost } from "./../@types/schema";
+import { PortfolioPost } from "../types/postPortfolio";
 import { Client } from "@notionhq/client";
 
 export default class NotionServices {

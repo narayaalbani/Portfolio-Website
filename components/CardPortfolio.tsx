@@ -1,4 +1,4 @@
-import { PortfolioPost } from "@/@types/schema";
+import { PortfolioPost } from "@/types/postPortfolio";
 import { FunctionComponent } from "react";
 import dayjs from "dayjs";
 import Image from "next/image";

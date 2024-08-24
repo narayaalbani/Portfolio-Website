@@ -32,4 +32,13 @@ export const theme = extendTheme({
     green: "#04BF9D",
     blue: "#1A4AD9",
   },
+  styles: {
+    global: {
+      "html, body": {
+        backgroundColor: "light",
+        color: "dark",
+        scrollBehavior: "smooth",
+      },
+    },
+  },
 });

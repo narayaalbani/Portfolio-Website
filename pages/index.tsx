@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import NotionServices from "@/services/notion-services";
-import { PortfolioPost } from "@/@types/schema";
+import { PortfolioPost } from "@/types/postPortfolio";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";

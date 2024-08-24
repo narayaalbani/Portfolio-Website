@@ -77,27 +77,32 @@ export default function Navbar() {
           </Link>
         </Box>
         {/* Desktop Menu */}
-        <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
+        <HStack
+          as="nav"
+          spacing={[4, 6]}
+          display={{ base: "none", lg: "flex" }}
+        >
           {Links.map((link) => (
             <Link
               key={link}
               href={`/#${link.toLowerCase().replace(/\s+/g, "")}`}
               fontSize={"lg"}
               position="relative"
-              display="block"
               _after={{
                 content: '""',
                 position: "absolute",
+                bg: "dark",
                 width: "0",
                 height: "2px",
-                bottom: "0",
-                left: "0",
-                backgroundColor: "dark",
-                transition: "width 0.3s ease-in-out",
+                left: "50%",
+                bottom: "-4px",
+                transition: "all 0.5s ease-in-out",
               }}
               _hover={{
                 _after: {
                   width: "100%",
+                  left: "0",
+                  transition: "all 0.5s ease-in-out",
                 },
               }}
             >
@@ -116,7 +121,7 @@ export default function Navbar() {
             )
           }
           aria-label="Toggle Navigation"
-          display={{ md: "none" }}
+          display={{ lg: "none" }}
           onClick={handleToggle}
           background="transparent"
           _hover={{ background: "transparent" }}
@@ -130,7 +135,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <Box pb={4} display={{ md: "none" }}>
+        <Box pb={4} display={{ lg: "none" }}>
           <Stack as="nav" spacing={4}>
             {Links.map((link) => (
               <Link
@@ -138,22 +143,25 @@ export default function Navbar() {
                 onClick={() =>
                   handleLinkClick(`/#${link.toLowerCase().replace(/\s+/g, "")}`)
                 }
+                fontSize={"lg"}
                 py={1}
                 rounded="md"
                 position="relative"
                 _after={{
                   content: '""',
                   position: "absolute",
+                  bg: "dark",
                   width: "0",
                   height: "2px",
-                  bottom: "0",
-                  left: "0",
-                  backgroundColor: "teal.500",
-                  transition: "width 0.3s ease-in-out",
+                  left: "50%",
+                  bottom: "-4px",
+                  transition: "all 0.5s ease-in-out",
                 }}
                 _hover={{
                   _after: {
                     width: "100%",
+                    left: "0",
+                    transition: "all 0.5s ease-in-out",
                   },
                 }}
               >
