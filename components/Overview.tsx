@@ -370,12 +370,12 @@ export default function Overview() {
             Programmer
           </Text>
           <Text mt={4} fontSize={["lg"]} textAlign={"justify"}>
-            Hello! I'm Muhammad Ariq Farhan. I'm an enthusiastic and highly
-            motivated individual who loves a good challenge. I have strong
-            leadership skills, a knack for taking initiative, and a passion for
-            continuous learning. I adapt quickly and perform well under
-            pressure, and my keen eye for detail and problem-solving skills make
-            me a valuable asset in the IT field. I actively seek out
+            Hello! I&apos;m Muhammad Ariq Farhan. I&apos;m an enthusiastic and
+            highly motivated individual who loves a good challenge. I have
+            strong leadership skills, a knack for taking initiative, and a
+            passion for continuous learning. I adapt quickly and perform well
+            under pressure, and my keen eye for detail and problem-solving
+            skills make me a valuable asset in the IT field. I actively seek out
             opportunities to learn and grow, tackling every challenge with a
             solutions-oriented mindset. I also have skills and experience in
             color grading with DaVinci Resolve and have worked on several film
